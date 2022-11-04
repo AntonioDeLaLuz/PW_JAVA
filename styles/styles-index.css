@@ -135,3 +135,12 @@ body{
 ul{
     list-style: none;
 }
+ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+ul a:hover{
+    font-size: 24px;
+    
+}
