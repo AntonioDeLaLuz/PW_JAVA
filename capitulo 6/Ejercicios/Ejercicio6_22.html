@@ -1,0 +1,87 @@
+
+<!-- Ejercicios Capítilo 6  |  6.22 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/styles-ejercicios.css">        
+        <title>Ejercicio 6.22</title>
+        <style type="text/css">
+            h4{
+                margin-left: 2.5em ;
+            }
+            h3 {
+                margin-left: 1.5em;
+            }
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rgb(188, 56, 0);
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rgb(188, 56, 0);
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+    <body>
+        
+        
+        <header class="gradient">
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+             <h1 class="titulo"><strong>Ejercicios</strong></h1>
+               
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        
+        <div class="contenedor_2">
+            <!-- desarrollo con JavaScript -->
+            
+            <script>
+                /* variables */
+                let n1, n2;
+
+                /* pedir valor de los numeros */
+                n1 = window.prompt("Escribe el primer número: ");
+                n2 = window.prompt("Escribe el segundo número: ");
+
+                /* convertir de string a int */
+                n1 = parseInt(n1);
+                n2 = parseInt(n2);
+
+                /* funcion para saber si un numeor es multiplo */
+                function multiplo(a,b){
+                    //Si el residuo es 0, entonces es multiplo
+                    if(a % b == 0){
+                        return document.writeln("<h1>"+a+" es múltiplo de "+b+"</h1>");
+                    }else{
+                        return document.writeln("<h1>"+a+" no es múltiplo de "+b+"</h1>");
+                    }
+                }
+
+                /* determinar si es multiplo */
+                multiplo(n1,n2);
+
+            </script>
+        </div>
+    </body>
+</html>

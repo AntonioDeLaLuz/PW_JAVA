@@ -1,0 +1,80 @@
+
+<!-- Ejercicios Capítilo 6  |  6.21 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/styles-ejercicios.css">        
+        <title>Ejercicio 6.21</title>
+        <style type="text/css">
+            h4{
+                margin-left: 2.5em ;
+            }
+            h3 {
+                margin-left: 1.5em;
+            }
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rgb(188, 56, 0);
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rgb(188, 56, 0);
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style> 
+
+    </head>
+    <body>
+        
+        
+        <header class="gradient">
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+             <h1 class="titulo"><strong>Ejercicios</strong></h1>
+               
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        
+        <div class="contenedor_2">
+            <!-- desarrollo con JavaScript -->
+            <script>
+                /* variables */
+                let numero;
+
+                /* pedir valor */
+                numero = window.prompt("Escribe un número: ");
+
+                /* convetir a enteros */
+                numero = parseInt(numero);
+
+                /* ¿es par? */
+                if(numero % 2 == 0){
+                    console.log("El número "+numero+" es par");                     //Muestro en consola
+                    document.writeln("<h1>El número "+numero+" es par</h1>");       //Doc HTML5
+                }else{                  
+                    console.log("El número "+numero+" no es par");                  //Muestro en consola
+                    document.writeln("<h1>El número "+numero+" no es par</h1>");    //Doc HTML5
+                }
+            </script>
+        </div>
+    </body>
+</html>

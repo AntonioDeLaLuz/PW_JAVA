@@ -1,0 +1,86 @@
+
+<!-- Ejercicios Capítilo 6  |  6.15 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/styles-cuestionario.css">        
+        <title>Ejercicio 6.15</title>
+        <style type="text/css">
+            #th1{
+                margin-left: 2em;
+            }
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rgb(188, 56, 0);
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rgb(188, 56, 0);
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+    <body>
+        
+        
+        <header class="gradient">
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+             <h1 class="titulo"><strong>Ejercicios</strong></h1>
+               
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        <!-- Custionario -->
+        <div class="contenedor_2">
+                        
+            <!-- Cuestionario -->
+            <ul>
+                <!-- a -->
+                <li>
+                    <p>
+                        <strong>a)</strong> Use una instrucci&oacute;n document.writeln.
+                        <script>
+                            /* a) */
+                            document.writeln("<h1 id=th1 >1 2 3 4</h1>")
+                        </script>
+                        
+                    </p>
+                </li>
+                <!-- b -->
+                <li>
+                    <p>
+                        <strong>b)</strong> Use cuatro instrucciones document.write.
+                        <script>
+                            /* b) */
+                            document.write("<h1 id=th1>1</h1>");
+                            document.write("<h1 id=th1>2</h1>");
+                            document.write("<h1 id=th1>3</h1>");
+                            document.write("<h1 id=th1>4</h1>");
+                        </script>
+                    </p>
+                </li>
+            </ul>
+        
+        </div>
+        <!-- Fin del cuestionario -->
+
+    </body>
+</html>

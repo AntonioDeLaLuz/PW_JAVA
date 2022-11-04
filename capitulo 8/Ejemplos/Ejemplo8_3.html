@@ -1,0 +1,41 @@
+
+<!-- Capitulo 8 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 8.3: Ejemplo8_3.html -->
+<!-- Suma con la estructura de repetición. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sumar los enteros pares del 2 al 100</title>
+        <link rel="stylesheet" href="styles/styles-ejem.css">
+        
+    </head>
+    <body>
+        
+        <header class="gradient">
+            <h1 class="titulo"><strong>Ejemplos</strong> | Cap&iacute;tulo VIII</h1>
+               
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        <div class="contenedor_2">
+            
+           <script>
+                let suma = 0;
+
+                for(let numero = 2; numero <= 100; numero += 2){
+                    suma += numero;
+                }
+
+                document.writeln("La suma de los enteros pares "+ "del 2 al 100 es "+suma);
+
+           </script>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+<!-- Capitulo 7 -->
+<!-- Ejercicio 7_2 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 7.2</title>
+        <link rel="stylesheet" href="styles/styles-ejer.css">
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rgb(188, 56, 0);
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rgb(188, 56, 0);
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+    <body>
+        
+        <header class="gradient">
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo"><strong>Ejemplos</strong></h1>
+               
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        <div class="contenedor_2">
+            
+           <script>
+                /* variables */
+                let x;
+                 
+                x = x + 1;
+                x += 1;
+                ++x;
+                x++;                
+
+                /* escribir en el documento de HTML5 */
+                document.writeln("<h1> x = x + 1;</h1>");
+                document.writeln("<h1> x += 1;</h1>");
+                document.writeln("<h1> ++x;</h1>");
+                document.writeln("<h1> x++;</h1>");
+               
+           </script>
+
+        </div>
+
+    </body>
+</html>

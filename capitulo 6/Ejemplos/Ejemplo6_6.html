@@ -1,0 +1,80 @@
+
+<!-- Capitulo 6 -->
+
+<!DOCTYPE html>
+
+<!-- Fid. 6.6: Ejemplo6_6.css -->
+<!-- Uso de operadores de igualdad y relacionales. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Uso de operadores relacionales</title>
+        <link rel="stylesheet" href="styles/styles-ejem.css">
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rgb(188, 56, 0);
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rgb(188, 56, 0);
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+    <body>
+        
+        <header class="gradient">
+            <!-- Botón para regresar al inicio -->
+           <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+                <h1 class="titulo"><strong>Ejemplos</strong></h1>
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        <div class="contenedor_2">
+            
+           <script>
+                var nombre;             //cadena introducida por el usuario 
+                var ahora = new Date();         //fecha y hora actuales
+                var hora = ahora.getHours();   //hora  actusl (0-23)
+
+                // lee el nombre del cuadro indicador como una cadena
+                nombre = window.prompt("Escriba su nombre:");
+
+                // determina  si es de mañana
+                if(hora < 12){
+                    document.write("<h1>Buenos d&iacuteas, ");
+                }
+
+                // determina si la hora el PM
+                if(hora>=12){
+                    // convierte a reloj de 12 horas
+                    hora = hora - 12;
+                    
+                    //determina si es antes de las 6PM
+                    if(hora < 6){
+                        document.write("<h1>Buenas tardes, ");
+                    }
+
+                    // determina si es después de las 6PM
+                    if(hora>=6){
+                        document.write("<h1>Buenas noches, ");
+                    }
+                }   //end if
+                document.writeln(nombre + ", bienvenido a la programaci&oacuten en JavaScript</h1>");
+           </script>
+        </div>
+    </body>
+</html>

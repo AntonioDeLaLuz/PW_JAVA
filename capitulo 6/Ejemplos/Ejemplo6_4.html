@@ -1,0 +1,61 @@
+
+<!-- Capitulo 6 -->
+
+<!DOCTYPE html>
+
+<!-- Fig. 6.5: Ejemplo6_4.css -->
+<!-- Cuadrado indicador utilizado en una pantalla de bienvenida. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Uso de cuadros promt y alert</title>
+        <link rel="stylesheet" href="styles/styles-ejem.css">
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rgb(188, 56, 0);
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rgb(188, 56, 0);
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+    <body>
+        
+        <header class="gradient">
+            <!-- Botón para regresar al inicio -->
+           <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+                <h1 class="titulo"><strong>Ejemplos</strong></h1>
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        <div class="contenedor_2">
+            
+           <script>
+                var nombre; //cadena introducida por el usuario
+
+                // lee el nombre del cuadro promt como una cadena
+                nombre = window.prompt("Escriba su nombre");
+
+                document.writeln("<h1>Hola "+ nombre + ", bienvenido a la programación en Java Script")
+
+           </script>
+
+        </div>
+
+    </body>
+</html>

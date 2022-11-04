@@ -1,0 +1,102 @@
+
+<!-- Ejercicios Capítilo 7 -->
+<!-- 7.21 -->
+
+<!-- 
+
+    PONER ESTA PAGINA COMO UNA DIRECCION APARTE Y NO COMO CONTINUIDAD 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/styles-ejer.css">        
+        <title>Ejercicio 7.21</title>
+
+        <style type="text/css">
+            .img-prueba{
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 350px;
+            }
+            h3{
+                position: relative;
+                margin-left: 45px;
+            }
+            table{
+                border: black solid 1px;
+                color: black;
+                position: relative;
+                left: 23em;
+            }
+            td, th {
+                border: black solid 1px;
+            }
+        </style>
+        <style type="text/css">
+            .boton{
+                font-size: 18px;
+                padding: 15px;
+                color: #fff;
+                border: 1px solid rgb(0, 0, 0);
+                background-color:rgb(188, 56, 0);
+                border-radius: 5px;
+                font: inherit;
+                position: fixed;
+                top: 2em;
+            }
+            .boton:hover{
+                border: 3px solid rgb(188, 56, 0);
+                background-color:  rgb(0, 0, 0);
+                cursor: pointer;
+            }
+        </style> 
+
+    </head>
+    <body>
+        
+        
+        <header class="gradient">
+            <!-- Botón para regresar al inicio -->
+            <a href="../../index.html">
+                <label>
+                    <input type="submit" name="regresar" id="menu" class="boton" value="Regresar">
+                </label>
+            </a>
+            <h1 class="titulo"><strong>Ejercicios</strong> | Cap&iacute;tulo VII</h1>
+               
+        </header>
+        
+        
+        <!-- ================================================================ -->
+
+        <!-- Custionario -->
+        <div class="contenedor_2">
+            
+            <!-- Desarrollo en JavaScript  -->
+            <script>
+                /* variable */
+                
+                /* confirmacion */
+                
+                window.alert("Ejercicio 7.21\nEstá pagina no cargará porque contiene un ciclo while INFINITO.\n Al ejecutar este script se generan números infinitos (multiplos de 2), por lo cual nunca termina la ejecuacion y los calculos, el navegador no podrá abrirla página y posiblemente este comience a gastar muchos recursos de la computadora."); 
+                
+                
+                let numero = 2;
+                let resultado = 0;
+                let cont = 1;
+                while(true){
+                    resultado = + numero * cont;
+                    console.log(resultado);
+                    cont ++;
+                }
+
+            </script>
+        </div>
+        
+    </body> 
+</html>
